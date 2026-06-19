@@ -1,0 +1,13 @@
+airbnb:
+  outputs:
+    dev:
+      type: snowflake
+      account: gsffrhv-xv14697
+      user: dbt
+      role: TRANSFORM
+      database: AIRBNB
+      warehouse: COMPUTE_WH
+      schema: DEV
+      threads: 1
+      private_key_path: "E:/keys/dbt_key_nopass.p8"
+  target: dev
