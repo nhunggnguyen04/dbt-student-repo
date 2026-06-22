@@ -1,0 +1,8 @@
+snapshots:
+  - name: scd_listings_price_history
+    relation: source('airbnb', 'listings')
+    config:
+      unique_key: id
+      strategy: check
+      check_cols: ['price', 'minimum_nights', 'room_type']
+      hard_deletes: invalidate

@@ -1,0 +1,7 @@
+airbnb:
+  outputs:
+    dev:
+      type: duckdb
+      path: "airbnb.duckdb"
+      schema: dev
+  target: dev
